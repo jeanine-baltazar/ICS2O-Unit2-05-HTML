@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html lang="en-ca">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"content="Calculating the area of a square.">
+      <meta name="keywords"content= "Hello, World!, Area, Square, Length.">
+      <meta name="author"content= "Jeanine Baltazar">
+      <meta name="viewport"content="width=device-width, initial-scale=1.0">
+      <title>Jeanine's Webpage</title>
+      <link rel="stylesheet" href="mystyle.css">
+      <script>
+        let squareArea,squareLength;
+        function calculate ()
+        {
+            squareLength=document.calculator.length.value;
+            squareArea=squareLength*squareLength;
+            document.calculator.result.value=squareArea;
+        }
+      </script>
+    </head>
+    <body>
+      <h1>Jeanine's Webpage</h1>
+      <p id="explination">Hello,  World! This webpage will help you calculate the area of any square! Type the side length of your square in the "Square Length" input box below. You may use whole numbers and decimals, but no fractions. Then, click the "Calculate" button to recieve your answer. The area of your square will be displayed in the second input box called "Square Area".</p>
+      <form name="calculator">
+        <p id="title">Square Length:</p>
+        <input type="text" name="length"><br><br>
+        <p id="title">Square Area:</p>
+        <input name="result"><br><br>
+        <input type="button" value="Calculate" id="button" onclick="calculate()">
+      </form>
+    </body>
+</html>
